@@ -19,6 +19,10 @@
 		4659F2BB245DDC1600797A2F /* DomainError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4659F2BA245DDC1600797A2F /* DomainError.swift */; };
 		4659F2BD245DE0A200797A2F /* HttpError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4659F2BC245DE0A200797A2F /* HttpError.swift */; };
 		4659F2C0245DFDAC00797A2F /* ExtensionHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4659F2BF245DFDAC00797A2F /* ExtensionHelpers.swift */; };
+		4659F2C3245E137600797A2F /* TestExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4659F2C2245E137600797A2F /* TestExtensions.swift */; };
+		4659F2C5245E145B00797A2F /* TestFactories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4659F2C4245E145B00797A2F /* TestFactories.swift */; };
+		4659F2C8245E153800797A2F /* HttpClientSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4659F2C7245E153800797A2F /* HttpClientSpy.swift */; };
+		4659F2CA245E15BD00797A2F /* AccountModelFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4659F2C9245E15BD00797A2F /* AccountModelFactory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +70,10 @@
 		4659F2BA245DDC1600797A2F /* DomainError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DomainError.swift; sourceTree = "<group>"; };
 		4659F2BC245DE0A200797A2F /* HttpError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpError.swift; sourceTree = "<group>"; };
 		4659F2BF245DFDAC00797A2F /* ExtensionHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionHelpers.swift; sourceTree = "<group>"; };
+		4659F2C2245E137600797A2F /* TestExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestExtensions.swift; sourceTree = "<group>"; };
+		4659F2C4245E145B00797A2F /* TestFactories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestFactories.swift; sourceTree = "<group>"; };
+		4659F2C7245E153800797A2F /* HttpClientSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpClientSpy.swift; sourceTree = "<group>"; };
+		4659F2C9245E15BD00797A2F /* AccountModelFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountModelFactory.swift; sourceTree = "<group>"; };
 		46938E71245D10F400F6F599 /* Domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		46938E74245D10F400F6F599 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -111,7 +119,9 @@
 		461B2823245D1BD400ED32C1 /* DataTests */ = {
 			isa = PBXGroup;
 			children = (
+				4659F2C1245E131A00797A2F /* Helpers */,
 				4659F2B8245DD23000797A2F /* UseCases */,
+				4659F2C6245E14EF00797A2F /* Http */,
 				461B2826245D1BD400ED32C1 /* Info.plist */,
 			);
 			path = DataTests;
@@ -180,6 +190,24 @@
 				4659F2BF245DFDAC00797A2F /* ExtensionHelpers.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		4659F2C1245E131A00797A2F /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				4659F2C2245E137600797A2F /* TestExtensions.swift */,
+				4659F2C4245E145B00797A2F /* TestFactories.swift */,
+				4659F2C9245E15BD00797A2F /* AccountModelFactory.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		4659F2C6245E14EF00797A2F /* Http */ = {
+			isa = PBXGroup;
+			children = (
+				4659F2C7245E153800797A2F /* HttpClientSpy.swift */,
+			);
+			path = Http;
 			sourceTree = "<group>";
 		};
 		46938E57245D0FEC00F6F599 = {
@@ -373,7 +401,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4659F2C5245E145B00797A2F /* TestFactories.swift in Sources */,
+				4659F2C8245E153800797A2F /* HttpClientSpy.swift in Sources */,
 				461B2825245D1BD400ED32C1 /* RemoteAddAccountTests.swift in Sources */,
+				4659F2CA245E15BD00797A2F /* AccountModelFactory.swift in Sources */,
+				4659F2C3245E137600797A2F /* TestExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
