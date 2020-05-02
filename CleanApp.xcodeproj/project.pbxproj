@@ -18,6 +18,7 @@
 		4659F2B3245DD09E00797A2F /* HttpPostClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4659F2B2245DD09E00797A2F /* HttpPostClient.swift */; };
 		4659F2BB245DDC1600797A2F /* DomainError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4659F2BA245DDC1600797A2F /* DomainError.swift */; };
 		4659F2BD245DE0A200797A2F /* HttpError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4659F2BC245DE0A200797A2F /* HttpError.swift */; };
+		4659F2C0245DFDAC00797A2F /* ExtensionHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4659F2BF245DFDAC00797A2F /* ExtensionHelpers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +65,7 @@
 		4659F2B2245DD09E00797A2F /* HttpPostClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpPostClient.swift; sourceTree = "<group>"; };
 		4659F2BA245DDC1600797A2F /* DomainError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DomainError.swift; sourceTree = "<group>"; };
 		4659F2BC245DE0A200797A2F /* HttpError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpError.swift; sourceTree = "<group>"; };
+		4659F2BF245DFDAC00797A2F /* ExtensionHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionHelpers.swift; sourceTree = "<group>"; };
 		46938E71245D10F400F6F599 /* Domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		46938E74245D10F400F6F599 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -98,6 +100,7 @@
 		461B2818245D1BD400ED32C1 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				4659F2BE245DFD7A00797A2F /* Helpers */,
 				4659F2B6245DD1F800797A2F /* UseCases */,
 				4659F2B7245DD21200797A2F /* Http */,
 				461B281A245D1BD400ED32C1 /* Info.plist */,
@@ -169,6 +172,14 @@
 				4659F2BA245DDC1600797A2F /* DomainError.swift */,
 			);
 			path = Erros;
+			sourceTree = "<group>";
+		};
+		4659F2BE245DFD7A00797A2F /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				4659F2BF245DFDAC00797A2F /* ExtensionHelpers.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 		46938E57245D0FEC00F6F599 = {
@@ -352,6 +363,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4659F2B3245DD09E00797A2F /* HttpPostClient.swift in Sources */,
+				4659F2C0245DFDAC00797A2F /* ExtensionHelpers.swift in Sources */,
 				4659F2BD245DE0A200797A2F /* HttpError.swift in Sources */,
 				4659F2AF245DCF2000797A2F /* RemoteAddAccount.swift in Sources */,
 			);
