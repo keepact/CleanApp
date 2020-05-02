@@ -94,8 +94,8 @@
 		461B2818245D1BD400ED32C1 /* Data */ = {
 			isa = PBXGroup;
 			children = (
-				4659F2AE245DCF2000797A2F /* RemoteAddAccount.swift */,
-				4659F2B2245DD09E00797A2F /* HttpPostClient.swift */,
+				4659F2B6245DD1F800797A2F /* UseCases */,
+				4659F2B7245DD21200797A2F /* Http */,
 				461B281A245D1BD400ED32C1 /* Info.plist */,
 			);
 			path = Data;
@@ -104,7 +104,7 @@
 		461B2823245D1BD400ED32C1 /* DataTests */ = {
 			isa = PBXGroup;
 			children = (
-				461B2824245D1BD400ED32C1 /* RemoteAddAccountTests.swift */,
+				4659F2B8245DD23000797A2F /* UseCases */,
 				461B2826245D1BD400ED32C1 /* Info.plist */,
 			);
 			path = DataTests;
@@ -115,6 +115,47 @@
 			children = (
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4659F2B4245DD16F00797A2F /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				461B280E245D139B00ED32C1 /* AddAccount.swift */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		4659F2B5245DD1D900797A2F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				461B2810245D162700ED32C1 /* AccountModel.swift */,
+				4659F2AC245DCDC300797A2F /* Model.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		4659F2B6245DD1F800797A2F /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				4659F2AE245DCF2000797A2F /* RemoteAddAccount.swift */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		4659F2B7245DD21200797A2F /* Http */ = {
+			isa = PBXGroup;
+			children = (
+				4659F2B2245DD09E00797A2F /* HttpPostClient.swift */,
+			);
+			path = Http;
+			sourceTree = "<group>";
+		};
+		4659F2B8245DD23000797A2F /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				461B2824245D1BD400ED32C1 /* RemoteAddAccountTests.swift */,
+			);
+			path = UseCases;
 			sourceTree = "<group>";
 		};
 		46938E57245D0FEC00F6F599 = {
@@ -141,9 +182,8 @@
 		46938E72245D10F400F6F599 /* Domain */ = {
 			isa = PBXGroup;
 			children = (
-				461B280E245D139B00ED32C1 /* AddAccount.swift */,
-				461B2810245D162700ED32C1 /* AccountModel.swift */,
-				4659F2AC245DCDC300797A2F /* Model.swift */,
+				4659F2B4245DD16F00797A2F /* UseCases */,
+				4659F2B5245DD1D900797A2F /* Models */,
 				46938E74245D10F400F6F599 /* Info.plist */,
 			);
 			path = Domain;
