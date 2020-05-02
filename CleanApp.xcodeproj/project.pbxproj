@@ -14,6 +14,8 @@
 		461B282F245D1C2A00ED32C1 /* Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46938E71245D10F400F6F599 /* Domain.framework */; };
 		461B2830245D1C2B00ED32C1 /* Domain.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 46938E71245D10F400F6F599 /* Domain.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		4659F2AD245DCDC300797A2F /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4659F2AC245DCDC300797A2F /* Model.swift */; };
+		4659F2AF245DCF2000797A2F /* RemoteAddAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4659F2AE245DCF2000797A2F /* RemoteAddAccount.swift */; };
+		4659F2B3245DD09E00797A2F /* HttpPostClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4659F2B2245DD09E00797A2F /* HttpPostClient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +58,8 @@
 		461B2824245D1BD400ED32C1 /* RemoteAddAccountTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteAddAccountTests.swift; sourceTree = "<group>"; };
 		461B2826245D1BD400ED32C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4659F2AC245DCDC300797A2F /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		4659F2AE245DCF2000797A2F /* RemoteAddAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteAddAccount.swift; sourceTree = "<group>"; };
+		4659F2B2245DD09E00797A2F /* HttpPostClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpPostClient.swift; sourceTree = "<group>"; };
 		46938E71245D10F400F6F599 /* Domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		46938E74245D10F400F6F599 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -90,6 +94,8 @@
 		461B2818245D1BD400ED32C1 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				4659F2AE245DCF2000797A2F /* RemoteAddAccount.swift */,
+				4659F2B2245DD09E00797A2F /* HttpPostClient.swift */,
 				461B281A245D1BD400ED32C1 /* Info.plist */,
 			);
 			path = Data;
@@ -231,6 +237,7 @@
 				TargetAttributes = {
 					461B2816245D1BD400ED32C1 = {
 						CreatedOnToolsVersion = 11.4.1;
+						LastSwiftMigration = 1140;
 					};
 					461B281E245D1BD400ED32C1 = {
 						CreatedOnToolsVersion = 11.4.1;
@@ -290,6 +297,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4659F2B3245DD09E00797A2F /* HttpPostClient.swift in Sources */,
+				4659F2AF245DCF2000797A2F /* RemoteAddAccount.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -330,6 +339,7 @@
 		461B2829245D1BD400ED32C1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
@@ -349,6 +359,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -356,6 +367,7 @@
 		461B282A245D1BD400ED32C1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
@@ -382,6 +394,7 @@
 		461B282C245D1BD400ED32C1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = QU32S9PHWL;
@@ -402,6 +415,7 @@
 		461B282D245D1BD400ED32C1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = QU32S9PHWL;
