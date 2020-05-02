@@ -13,6 +13,7 @@
 		461B2825245D1BD400ED32C1 /* RemoteAddAccountTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461B2824245D1BD400ED32C1 /* RemoteAddAccountTests.swift */; };
 		461B282F245D1C2A00ED32C1 /* Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46938E71245D10F400F6F599 /* Domain.framework */; };
 		461B2830245D1C2B00ED32C1 /* Domain.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 46938E71245D10F400F6F599 /* Domain.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4659F2AD245DCDC300797A2F /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4659F2AC245DCDC300797A2F /* Model.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,7 @@
 		461B281F245D1BD400ED32C1 /* DataTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DataTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		461B2824245D1BD400ED32C1 /* RemoteAddAccountTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteAddAccountTests.swift; sourceTree = "<group>"; };
 		461B2826245D1BD400ED32C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4659F2AC245DCDC300797A2F /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		46938E71245D10F400F6F599 /* Domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		46938E74245D10F400F6F599 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -135,6 +137,7 @@
 			children = (
 				461B280E245D139B00ED32C1 /* AddAccount.swift */,
 				461B2810245D162700ED32C1 /* AccountModel.swift */,
+				4659F2AC245DCDC300797A2F /* Model.swift */,
 				46938E74245D10F400F6F599 /* Info.plist */,
 			);
 			path = Domain;
@@ -302,6 +305,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4659F2AD245DCDC300797A2F /* Model.swift in Sources */,
 				461B280F245D139B00ED32C1 /* AddAccount.swift in Sources */,
 				461B2811245D162700ED32C1 /* AccountModel.swift in Sources */,
 			);
