@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4615CCE3245F6D6F0071A5FC /* EmailValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4615CCE2245F6D6F0071A5FC /* EmailValidator.swift */; };
 		461B280F245D139B00ED32C1 /* AddAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461B280E245D139B00ED32C1 /* AddAccount.swift */; };
 		461B2811245D162700ED32C1 /* AccountModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461B2810245D162700ED32C1 /* AccountModel.swift */; };
 		461B2820245D1BD400ED32C1 /* Data.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 461B2817245D1BD400ED32C1 /* Data.framework */; };
@@ -145,6 +146,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		4615CCE2245F6D6F0071A5FC /* EmailValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailValidator.swift; sourceTree = "<group>"; };
 		461B280E245D139B00ED32C1 /* AddAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAccount.swift; sourceTree = "<group>"; };
 		461B2810245D162700ED32C1 /* AccountModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountModel.swift; sourceTree = "<group>"; };
 		461B2817245D1BD400ED32C1 /* Data.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Data.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -251,6 +253,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4615CCE1245F6D440071A5FC /* Validators */ = {
+			isa = PBXGroup;
+			children = (
+				4615CCE2245F6D6F0071A5FC /* EmailValidator.swift */,
+			);
+			path = Validators;
+			sourceTree = "<group>";
+		};
 		461B2818245D1BD400ED32C1 /* Data */ = {
 			isa = PBXGroup;
 			children = (
@@ -386,6 +396,7 @@
 		466F693F245F54F200075A93 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				4615CCE1245F6D440071A5FC /* Validators */,
 				46DD9811245F67A500B44A38 /* Views */,
 				46DD9814245F67E400B44A38 /* Presenters */,
 				466F6941245F54F200075A93 /* Info.plist */,
@@ -859,6 +870,7 @@
 			files = (
 				46DD980B245F66BB00B44A38 /* SignUpPresenter.swift in Sources */,
 				46DD9813245F67B900B44A38 /* AlertView.swift in Sources */,
+				4615CCE3245F6D6F0071A5FC /* EmailValidator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

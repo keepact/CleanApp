@@ -2,9 +2,11 @@ import Foundation
 
 public final class SignUpPresenter {
     private let alertView: AlertView
+    private let emailValidator: EmailValidator
     
-    public init(alertView: AlertView) {
+    public init(alertView: AlertView, emailValidator: EmailValidator) {
         self.alertView = alertView
+        self.emailValidator = emailValidator
     }
     public func signUp(viewModel: SignUpViewModel) {
        if let message = validate(viewModel: viewModel) {
@@ -24,6 +26,7 @@ public final class SignUpPresenter {
         } else if viewModel.password != viewModel.passwordConfirmation {
             return "There was an error confirming your password"
         }
+        _ = emailValidator.isValid(email: viewModel.email!)
         return nil
     }
 }
