@@ -21,6 +21,8 @@ public final class SignUpPresenter {
             return "The field password is required"
         } else if viewModel.passwordConfirmation == nil || viewModel.passwordConfirmation!.isEmpty {
             return "The field confirm password is required"
+        } else if viewModel.password != viewModel.passwordConfirmation {
+            return "There was an error confirming your password"
         }
         return nil
     }
