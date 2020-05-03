@@ -205,7 +205,6 @@
 			isa = PBXGroup;
 			children = (
 				46EC26C5245F274D00E1155D /* Http */,
-				46292012245E289F00C85316 /* AlamofireAdapterTests.swift */,
 				46292014245E289F00C85316 /* Info.plist */,
 			);
 			path = InfraTests;
@@ -334,6 +333,7 @@
 		46EC26C5245F274D00E1155D /* Http */ = {
 			isa = PBXGroup;
 			children = (
+				46292012245E289F00C85316 /* AlamofireAdapterTests.swift */,
 				46EC26C6245F277900E1155D /* UrlProtocolStub.swift */,
 			);
 			path = Http;
