@@ -33,8 +33,12 @@
 		466F692D245F4D7500075A93 /* Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46938E71245D10F400F6F599 /* Domain.framework */; };
 		466F6938245F4E9200075A93 /* AddAccountIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466F6937245F4E9200075A93 /* AddAccountIntegrationTests.swift */; };
 		466F6947245F54F200075A93 /* Presentation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 466F693E245F54F200075A93 /* Presentation.framework */; };
-		466F694C245F54F200075A93 /* PresentationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466F694B245F54F200075A93 /* PresentationTests.swift */; };
+		466F694C245F54F200075A93 /* SignUpPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466F694B245F54F200075A93 /* SignUpPresenterTests.swift */; };
 		46DC7106245F2331005C2442 /* AlamofireAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46DC7105245F2331005C2442 /* AlamofireAdapter.swift */; };
+		46DD980B245F66BB00B44A38 /* SignUpPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46DD980A245F66BB00B44A38 /* SignUpPresenter.swift */; };
+		46DD980C245F66F900B44A38 /* Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46938E71245D10F400F6F599 /* Domain.framework */; };
+		46DD980D245F66F900B44A38 /* Domain.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 46938E71245D10F400F6F599 /* Domain.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		46DD9813245F67B900B44A38 /* AlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46DD9812245F67B900B44A38 /* AlertView.swift */; };
 		46EC26C7245F277900E1155D /* UrlProtocolStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EC26C6245F277900E1155D /* UrlProtocolStub.swift */; };
 /* End PBXBuildFile section */
 
@@ -95,6 +99,13 @@
 			remoteGlobalIDString = 466F693D245F54F200075A93;
 			remoteInfo = Presentation;
 		};
+		46DD980E245F66F900B44A38 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 46938E58245D0FEC00F6F599 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 46938E70245D10F400F6F599;
+			remoteInfo = Domain;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -116,6 +127,17 @@
 			dstSubfolderSpec = 10;
 			files = (
 				4629201D245E2B1F00C85316 /* Data.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		46DD9810245F66F900B44A38 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				46DD980D245F66F900B44A38 /* Domain.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -151,11 +173,13 @@
 		466F693E245F54F200075A93 /* Presentation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Presentation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		466F6941245F54F200075A93 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		466F6946245F54F200075A93 /* PresentationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PresentationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		466F694B245F54F200075A93 /* PresentationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentationTests.swift; sourceTree = "<group>"; };
+		466F694B245F54F200075A93 /* SignUpPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpPresenterTests.swift; sourceTree = "<group>"; };
 		466F694D245F54F200075A93 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		46938E71245D10F400F6F599 /* Domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		46938E74245D10F400F6F599 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		46DC7105245F2331005C2442 /* AlamofireAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireAdapter.swift; sourceTree = "<group>"; };
+		46DD980A245F66BB00B44A38 /* SignUpPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpPresenter.swift; sourceTree = "<group>"; };
+		46DD9812245F67B900B44A38 /* AlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertView.swift; sourceTree = "<group>"; };
 		46EC26C6245F277900E1155D /* UrlProtocolStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrlProtocolStub.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -205,6 +229,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46DD980C245F66F900B44A38 /* Domain.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -361,6 +386,8 @@
 		466F693F245F54F200075A93 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				46DD9811245F67A500B44A38 /* Views */,
+				46DD9814245F67E400B44A38 /* Presenters */,
 				466F6941245F54F200075A93 /* Info.plist */,
 			);
 			path = Presentation;
@@ -369,7 +396,7 @@
 		466F694A245F54F200075A93 /* PresentationTests */ = {
 			isa = PBXGroup;
 			children = (
-				466F694B245F54F200075A93 /* PresentationTests.swift */,
+				46DD9815245F692800B44A38 /* Presenters */,
 				466F694D245F54F200075A93 /* Info.plist */,
 			);
 			path = PresentationTests;
@@ -423,6 +450,30 @@
 				46DC7105245F2331005C2442 /* AlamofireAdapter.swift */,
 			);
 			path = Http;
+			sourceTree = "<group>";
+		};
+		46DD9811245F67A500B44A38 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				46DD9812245F67B900B44A38 /* AlertView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		46DD9814245F67E400B44A38 /* Presenters */ = {
+			isa = PBXGroup;
+			children = (
+				46DD980A245F66BB00B44A38 /* SignUpPresenter.swift */,
+			);
+			path = Presenters;
+			sourceTree = "<group>";
+		};
+		46DD9815245F692800B44A38 /* Presenters */ = {
+			isa = PBXGroup;
+			children = (
+				466F694B245F54F200075A93 /* SignUpPresenterTests.swift */,
+			);
+			path = Presenters;
 			sourceTree = "<group>";
 		};
 		46EC26C5245F274D00E1155D /* Http */ = {
@@ -575,10 +626,12 @@
 				466F693A245F54F200075A93 /* Sources */,
 				466F693B245F54F200075A93 /* Frameworks */,
 				466F693C245F54F200075A93 /* Resources */,
+				46DD9810245F66F900B44A38 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				46DD980F245F66F900B44A38 /* PBXTargetDependency */,
 			);
 			name = Presentation;
 			productName = Presentation;
@@ -804,6 +857,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46DD980B245F66BB00B44A38 /* SignUpPresenter.swift in Sources */,
+				46DD9813245F67B900B44A38 /* AlertView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -811,7 +866,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				466F694C245F54F200075A93 /* PresentationTests.swift in Sources */,
+				466F694C245F54F200075A93 /* SignUpPresenterTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -868,6 +923,11 @@
 			isa = PBXTargetDependency;
 			target = 466F693D245F54F200075A93 /* Presentation */;
 			targetProxy = 466F6948245F54F200075A93 /* PBXContainerItemProxy */;
+		};
+		46DD980F245F66F900B44A38 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 46938E70245D10F400F6F599 /* Domain */;
+			targetProxy = 46DD980E245F66F900B44A38 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -1167,6 +1227,7 @@
 		466F6953245F54F200075A93 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = QU32S9PHWL;
@@ -1187,6 +1248,7 @@
 		466F6954245F54F200075A93 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = QU32S9PHWL;
