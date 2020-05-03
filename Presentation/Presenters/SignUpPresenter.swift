@@ -24,9 +24,9 @@ public final class SignUpPresenter {
         } else if viewModel.passwordConfirmation == nil || viewModel.passwordConfirmation!.isEmpty {
             return "The field confirm password is required"
         } else if viewModel.password != viewModel.passwordConfirmation {
-            return "There was an error confirming your password"
+            return "The field confirm password is invalid"
         } else if !emailValidator.isValid(email: viewModel.email!) {
-            return "Invalid email"
+            return "The field email is invalid"
         }
         return nil
     }
