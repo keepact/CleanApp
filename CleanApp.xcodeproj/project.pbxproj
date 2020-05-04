@@ -14,6 +14,7 @@
 		461B2825245D1BD400ED32C1 /* RemoteAddAccountTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461B2824245D1BD400ED32C1 /* RemoteAddAccountTests.swift */; };
 		461B282F245D1C2A00ED32C1 /* Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46938E71245D10F400F6F599 /* Domain.framework */; };
 		461B2830245D1C2B00ED32C1 /* Domain.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 46938E71245D10F400F6F599 /* Domain.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4626DB26245FA9EA00F4508F /* TestExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4659F2C2245E137600797A2F /* TestExtensions.swift */; };
 		4629200E245E289F00C85316 /* Infra.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46292005245E289E00C85316 /* Infra.framework */; };
 		46292013245E289F00C85316 /* AlamofireAdapterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46292012245E289F00C85316 /* AlamofireAdapterTests.swift */; };
 		4629201C245E2B1F00C85316 /* Data.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 461B2817245D1BD400ED32C1 /* Data.framework */; };
@@ -880,6 +881,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				46E4C070245F958200C83FB6 /* AccountModelFactory.swift in Sources */,
+				4626DB26245FA9EA00F4508F /* TestExtensions.swift in Sources */,
 				466F694C245F54F200075A93 /* SignUpPresenterTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
