@@ -43,6 +43,7 @@
 		46DD980D245F66F900B44A38 /* Domain.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 46938E71245D10F400F6F599 /* Domain.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		46DD9813245F67B900B44A38 /* AlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46DD9812245F67B900B44A38 /* AlertView.swift */; };
 		46E4C070245F958200C83FB6 /* AccountModelFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4659F2C9245E15BD00797A2F /* AccountModelFactory.swift */; };
+		46E79E492460F8BF006745DF /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E79E482460F8BF006745DF /* SignUpViewModel.swift */; };
 		46EC26C7245F277900E1155D /* UrlProtocolStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EC26C6245F277900E1155D /* UrlProtocolStub.swift */; };
 /* End PBXBuildFile section */
 
@@ -186,6 +187,7 @@
 		46DC7105245F2331005C2442 /* AlamofireAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireAdapter.swift; sourceTree = "<group>"; };
 		46DD980A245F66BB00B44A38 /* SignUpPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpPresenter.swift; sourceTree = "<group>"; };
 		46DD9812245F67B900B44A38 /* AlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertView.swift; sourceTree = "<group>"; };
+		46E79E482460F8BF006745DF /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
 		46EC26C6245F277900E1155D /* UrlProtocolStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrlProtocolStub.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -479,7 +481,7 @@
 		46DD9814245F67E400B44A38 /* Presenters */ = {
 			isa = PBXGroup;
 			children = (
-				46DD980A245F66BB00B44A38 /* SignUpPresenter.swift */,
+				46E79E472460F896006745DF /* SignUp */,
 			);
 			path = Presenters;
 			sourceTree = "<group>";
@@ -490,6 +492,15 @@
 				466F694B245F54F200075A93 /* SignUpPresenterTests.swift */,
 			);
 			path = Presenters;
+			sourceTree = "<group>";
+		};
+		46E79E472460F896006745DF /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				46DD980A245F66BB00B44A38 /* SignUpPresenter.swift */,
+				46E79E482460F8BF006745DF /* SignUpViewModel.swift */,
+			);
+			path = SignUp;
 			sourceTree = "<group>";
 		};
 		46EC26C5245F274D00E1155D /* Http */ = {
@@ -875,6 +886,7 @@
 			files = (
 				46DD980B245F66BB00B44A38 /* SignUpPresenter.swift in Sources */,
 				4626DB28245FACEA00F4508F /* LoadingView.swift in Sources */,
+				46E79E492460F8BF006745DF /* SignUpViewModel.swift in Sources */,
 				46DD9813245F67B900B44A38 /* AlertView.swift in Sources */,
 				4615CCE3245F6D6F0071A5FC /* EmailValidator.swift in Sources */,
 			);
