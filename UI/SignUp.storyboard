@@ -19,10 +19,34 @@
                                 <rect key="frame" x="189" y="430" width="37" height="37"/>
                             </activityIndicatorView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6en-9l-ffH">
-                                <rect key="frame" x="184" y="251" width="46" height="30"/>
+                                <rect key="frame" x="184" y="606" width="46" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                             </button>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2zz-Op-0am" userLabel="EmailTextField">
+                                <rect key="frame" x="159" y="206" width="97" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kvF-Fv-kCt" userLabel="PasswordTextField">
+                                <rect key="frame" x="159" y="259" width="97" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Nph-lf-OEv" userLabel="PasswordConfirmationTextField">
+                                <rect key="frame" x="159" y="314" width="97" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="crg-Ux-Vht" userLabel="NameTextField">
+                                <rect key="frame" x="159" y="153" width="97" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -32,7 +56,11 @@
                         <viewLayoutGuide key="safeArea" id="XP2-ng-c99"/>
                     </view>
                     <connections>
+                        <outlet property="emailTextField" destination="2zz-Op-0am" id="RfI-fJ-98V"/>
                         <outlet property="loadingIndicator" destination="nMH-xO-pUm" id="MEu-h5-cM5"/>
+                        <outlet property="nameTextField" destination="crg-Ux-Vht" id="jol-Rf-ash"/>
+                        <outlet property="passwordConfirmationTextField" destination="Nph-lf-OEv" id="Adx-KX-4JV"/>
+                        <outlet property="passwordTextField" destination="kvF-Fv-kCt" id="108-Bu-8hb"/>
                         <outlet property="saveButton" destination="6en-9l-ffH" id="mRB-BX-Ewc"/>
                     </connections>
                 </viewController>
