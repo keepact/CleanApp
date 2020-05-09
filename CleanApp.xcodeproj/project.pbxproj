@@ -37,6 +37,9 @@
 		466F6938245F4E9200075A93 /* AddAccountIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466F6937245F4E9200075A93 /* AddAccountIntegrationTests.swift */; };
 		466F6947245F54F200075A93 /* Presentation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 466F693E245F54F200075A93 /* Presentation.framework */; };
 		466F694C245F54F200075A93 /* SignUpPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466F694B245F54F200075A93 /* SignUpPresenterTests.swift */; };
+		46BF068D246641CA006C64EA /* Presentation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 466F693E245F54F200075A93 /* Presentation.framework */; };
+		46BF068E246641CA006C64EA /* Presentation.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 466F693E245F54F200075A93 /* Presentation.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		46BF0693246643B6006C64EA /* SignUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46BF0692246643B6006C64EA /* SignUp.storyboard */; };
 		46CD5B842461065500DBFC15 /* AlertViewSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CD5B832461065500DBFC15 /* AlertViewSpy.swift */; };
 		46CD5B87246106C800DBFC15 /* EmailValidatorSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CD5B86246106C800DBFC15 /* EmailValidatorSpy.swift */; };
 		46CD5B8A2461073E00DBFC15 /* AddAccountSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CD5B892461073E00DBFC15 /* AddAccountSpy.swift */; };
@@ -44,6 +47,7 @@
 		46CD5B90246108B300DBFC15 /* TestFactories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CD5B8F246108B300DBFC15 /* TestFactories.swift */; };
 		46CD5B9F24610C0300DBFC15 /* UI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46CD5B9624610C0200DBFC15 /* UI.framework */; };
 		46CD5BA424610C0300DBFC15 /* SignUpViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CD5BA324610C0300DBFC15 /* SignUpViewControllerTests.swift */; };
+		46CD5BAE2461120700DBFC15 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CD5BAD2461120700DBFC15 /* SignUpViewController.swift */; };
 		46DC7106245F2331005C2442 /* AlamofireAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46DC7105245F2331005C2442 /* AlamofireAdapter.swift */; };
 		46DD980B245F66BB00B44A38 /* SignUpPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46DD980A245F66BB00B44A38 /* SignUpPresenter.swift */; };
 		46DD980C245F66F900B44A38 /* Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46938E71245D10F400F6F599 /* Domain.framework */; };
@@ -112,6 +116,13 @@
 			remoteGlobalIDString = 466F693D245F54F200075A93;
 			remoteInfo = Presentation;
 		};
+		46BF068F246641CA006C64EA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 46938E58245D0FEC00F6F599 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 466F693D245F54F200075A93;
+			remoteInfo = Presentation;
+		};
 		46CD5BA024610C0300DBFC15 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 46938E58245D0FEC00F6F599 /* Project object */;
@@ -147,6 +158,17 @@
 			dstSubfolderSpec = 10;
 			files = (
 				4629201D245E2B1F00C85316 /* Data.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		46BF0691246641CA006C64EA /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				46BF068E246641CA006C64EA /* Presentation.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -199,6 +221,7 @@
 		466F694D245F54F200075A93 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		46938E71245D10F400F6F599 /* Domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		46938E74245D10F400F6F599 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		46BF0692246643B6006C64EA /* SignUp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignUp.storyboard; sourceTree = "<group>"; };
 		46CD5B832461065500DBFC15 /* AlertViewSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertViewSpy.swift; sourceTree = "<group>"; };
 		46CD5B86246106C800DBFC15 /* EmailValidatorSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailValidatorSpy.swift; sourceTree = "<group>"; };
 		46CD5B892461073E00DBFC15 /* AddAccountSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAccountSpy.swift; sourceTree = "<group>"; };
@@ -209,6 +232,7 @@
 		46CD5B9E24610C0300DBFC15 /* UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		46CD5BA324610C0300DBFC15 /* SignUpViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewControllerTests.swift; sourceTree = "<group>"; };
 		46CD5BA524610C0300DBFC15 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		46CD5BAD2461120700DBFC15 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		46DC7105245F2331005C2442 /* AlamofireAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireAdapter.swift; sourceTree = "<group>"; };
 		46DD980A245F66BB00B44A38 /* SignUpPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpPresenter.swift; sourceTree = "<group>"; };
 		46DD9812245F67B900B44A38 /* AlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertView.swift; sourceTree = "<group>"; };
@@ -286,6 +310,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46BF068D246641CA006C64EA /* Presentation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -547,6 +572,8 @@
 			isa = PBXGroup;
 			children = (
 				46CD5B9924610C0200DBFC15 /* Info.plist */,
+				46CD5BAD2461120700DBFC15 /* SignUpViewController.swift */,
+				46BF0692246643B6006C64EA /* SignUp.storyboard */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -816,10 +843,12 @@
 				46CD5B9224610C0200DBFC15 /* Sources */,
 				46CD5B9324610C0200DBFC15 /* Frameworks */,
 				46CD5B9424610C0200DBFC15 /* Resources */,
+				46BF0691246641CA006C64EA /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				46BF0690246641CA006C64EA /* PBXTargetDependency */,
 			);
 			name = UI;
 			productName = UI;
@@ -885,6 +914,7 @@
 					};
 					46CD5B9524610C0200DBFC15 = {
 						CreatedOnToolsVersion = 11.4.1;
+						LastSwiftMigration = 1140;
 					};
 					46CD5B9D24610C0300DBFC15 = {
 						CreatedOnToolsVersion = 11.4.1;
@@ -982,6 +1012,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46BF0693246643B6006C64EA /* SignUp.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1088,6 +1119,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46CD5BAE2461120700DBFC15 /* SignUpViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1141,6 +1173,11 @@
 			isa = PBXTargetDependency;
 			target = 466F693D245F54F200075A93 /* Presentation */;
 			targetProxy = 466F6948245F54F200075A93 /* PBXContainerItemProxy */;
+		};
+		46BF0690246641CA006C64EA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 466F693D245F54F200075A93 /* Presentation */;
+			targetProxy = 46BF068F246641CA006C64EA /* PBXContainerItemProxy */;
 		};
 		46CD5BA124610C0300DBFC15 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -1683,6 +1720,7 @@
 		46CD5BA824610C0300DBFC15 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
@@ -1703,6 +1741,7 @@
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				SUPPORTED_PLATFORMS = "macosx iphonesimulator iphoneos";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -1710,6 +1749,7 @@
 		46CD5BA924610C0300DBFC15 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
@@ -1737,6 +1777,7 @@
 		46CD5BAB24610C0300DBFC15 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = QU32S9PHWL;
@@ -1758,6 +1799,7 @@
 		46CD5BAC24610C0300DBFC15 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = QU32S9PHWL;
