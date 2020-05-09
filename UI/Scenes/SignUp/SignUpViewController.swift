@@ -15,6 +15,7 @@ final class SignUpViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         configure()
+        hideKeyboardOnTap()
     }
     
     private func configure() {
