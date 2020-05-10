@@ -78,6 +78,7 @@
 		46D007502468A30B00B5C38F /* SignUpIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46D0074F2468A30B00B5C38F /* SignUpIntegrationTests.swift */; };
 		46D007512468A39800B5C38F /* AddAccountSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CD5B892461073E00DBFC15 /* AddAccountSpy.swift */; };
 		46D007522468A42900B5C38F /* TestExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4659F2C2245E137600797A2F /* TestExtensions.swift */; };
+		46D007552468A76B00B5C38F /* WeekVarProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46D007542468A76B00B5C38F /* WeekVarProxy.swift */; };
 		46DC7106245F2331005C2442 /* AlamofireAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46DC7105245F2331005C2442 /* AlamofireAdapter.swift */; };
 		46DD980B245F66BB00B44A38 /* SignUpPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46DD980A245F66BB00B44A38 /* SignUpPresenter.swift */; };
 		46DD980C245F66F900B44A38 /* Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46938E71245D10F400F6F599 /* Domain.framework */; };
@@ -374,6 +375,7 @@
 		46D0074A2468A06F00B5C38F /* UseCaseFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseCaseFactory.swift; sourceTree = "<group>"; };
 		46D0074D2468A16D00B5C38F /* SignUpComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpComposer.swift; sourceTree = "<group>"; };
 		46D0074F2468A30B00B5C38F /* SignUpIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpIntegrationTests.swift; sourceTree = "<group>"; };
+		46D007542468A76B00B5C38F /* WeekVarProxy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekVarProxy.swift; sourceTree = "<group>"; };
 		46DC7105245F2331005C2442 /* AlamofireAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireAdapter.swift; sourceTree = "<group>"; };
 		46DD980A245F66BB00B44A38 /* SignUpPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpPresenter.swift; sourceTree = "<group>"; };
 		46DD9812245F67B900B44A38 /* AlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertView.swift; sourceTree = "<group>"; };
@@ -844,6 +846,7 @@
 		46D0070D2468984700B5C38F /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				46D007532468A74C00B5C38F /* Proxies */,
 				46D0074C2468A15B00B5C38F /* Composers */,
 				46D0074724689A6100B5C38F /* Factories */,
 				46D0070E2468984700B5C38F /* AppDelegate.swift */,
@@ -879,6 +882,14 @@
 				46D0074D2468A16D00B5C38F /* SignUpComposer.swift */,
 			);
 			path = Composers;
+			sourceTree = "<group>";
+		};
+		46D007532468A74C00B5C38F /* Proxies */ = {
+			isa = PBXGroup;
+			children = (
+				46D007542468A76B00B5C38F /* WeekVarProxy.swift */,
+			);
+			path = Proxies;
 			sourceTree = "<group>";
 		};
 		46DC7107245F2431005C2442 /* Http */ = {
@@ -1586,6 +1597,7 @@
 			files = (
 				46D0074B2468A06F00B5C38F /* UseCaseFactory.swift in Sources */,
 				46D0070F2468984700B5C38F /* AppDelegate.swift in Sources */,
+				46D007552468A76B00B5C38F /* WeekVarProxy.swift in Sources */,
 				46D0074924689A9200B5C38F /* ControllerFactory.swift in Sources */,
 				46D007112468984700B5C38F /* SceneDelegate.swift in Sources */,
 				46D0074E2468A16D00B5C38F /* SignUpComposer.swift in Sources */,
