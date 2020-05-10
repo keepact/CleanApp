@@ -55,6 +55,7 @@
 		46CD5B9F24610C0300DBFC15 /* UI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46CD5B9624610C0200DBFC15 /* UI.framework */; };
 		46CD5BA424610C0300DBFC15 /* SignUpViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CD5BA324610C0300DBFC15 /* SignUpViewControllerTests.swift */; };
 		46CD5BAE2461120700DBFC15 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CD5BAD2461120700DBFC15 /* SignUpViewController.swift */; };
+		46D0070724687CE400B5C38F /* EmailValidatorAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46D0070624687CE400B5C38F /* EmailValidatorAdapter.swift */; };
 		46DC7106245F2331005C2442 /* AlamofireAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46DC7105245F2331005C2442 /* AlamofireAdapter.swift */; };
 		46DD980B245F66BB00B44A38 /* SignUpPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46DD980A245F66BB00B44A38 /* SignUpPresenter.swift */; };
 		46DD980C245F66F900B44A38 /* Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46938E71245D10F400F6F599 /* Domain.framework */; };
@@ -273,6 +274,7 @@
 		46CD5BA324610C0300DBFC15 /* SignUpViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewControllerTests.swift; sourceTree = "<group>"; };
 		46CD5BA524610C0300DBFC15 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		46CD5BAD2461120700DBFC15 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		46D0070624687CE400B5C38F /* EmailValidatorAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailValidatorAdapter.swift; sourceTree = "<group>"; };
 		46DC7105245F2331005C2442 /* AlamofireAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireAdapter.swift; sourceTree = "<group>"; };
 		46DD980A245F66BB00B44A38 /* SignUpPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpPresenter.swift; sourceTree = "<group>"; };
 		46DD9812245F67B900B44A38 /* AlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertView.swift; sourceTree = "<group>"; };
@@ -385,6 +387,7 @@
 			isa = PBXGroup;
 			children = (
 				4614A11E246876A1007D9C96 /* Info.plist */,
+				46D0070624687CE400B5C38F /* EmailValidatorAdapter.swift */,
 			);
 			path = Validation;
 			sourceTree = "<group>";
@@ -1058,6 +1061,7 @@
 				TargetAttributes = {
 					4614A11A246876A1007D9C96 = {
 						CreatedOnToolsVersion = 11.4.1;
+						LastSwiftMigration = 1140;
 					};
 					4614A122246876A1007D9C96 = {
 						CreatedOnToolsVersion = 11.4.1;
@@ -1225,6 +1229,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46D0070724687CE400B5C38F /* EmailValidatorAdapter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1418,6 +1423,7 @@
 		4614A12C246876A1007D9C96 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
@@ -1438,6 +1444,7 @@
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -1445,6 +1452,7 @@
 		4614A12D246876A1007D9C96 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
@@ -1472,6 +1480,7 @@
 		4614A12E246876A1007D9C96 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = QU32S9PHWL;
@@ -1493,6 +1502,7 @@
 		4614A12F246876A1007D9C96 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = QU32S9PHWL;
