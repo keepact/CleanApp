@@ -13,18 +13,20 @@ public final class SignUpPresenter {
         self.addAccount = addAccount
         self.loadingView = loadingView
     }
+    
     public func signUp(viewModel: SignUpViewModel) {
        if let message = validate(viewModel: viewModel) {
             alertView.showMessage(viewModel: AlertViewModel(title: "Validation fails", message: message))
        } else {
-        loadingView.display(viewModel: LoadingViewModel(isLoading: true))
-        addAccount.add(addAccountModel: SignUpMapper.toAddAccountModel(viewModel: viewModel)) { [weak self] result in
-            guard let self = self else { return }
-            switch result {
-            case .failure: self.alertView.showMessage(viewModel: AlertViewModel(title: "Error", message: "Something unexpected happend, try again in a few minutes."))
-            case .success: self.alertView.showMessage(viewModel: AlertViewModel(title: "Success", message: "Account successfuly created."))
-            }
-            self.loadingView.display(viewModel: LoadingViewModel(isLoading: false))
+            loadingView.display(viewModel: LoadingViewModel(isLoading: true))
+            addAccount.add(addAccountModel: SignUpMapper.toAddAccountModel(viewModel: viewModel)) { [weak self]
+                result in
+                guard let self = self else { return }
+                self.loadingView.display(viewModel: LoadingViewModel(isLoading: false))
+                switch result {
+                case .failure: self.alertView.showMessage(viewModel: AlertViewModel(title: "Error", message: "Something unexpected happend, try again in a few minutes."))
+                case .success: self.alertView.showMessage(viewModel: AlertViewModel(title: "Success", message: "Account successfuly created."))
+                }
             }
         }
     }

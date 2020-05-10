@@ -79,6 +79,7 @@
 		46D007522468A42900B5C38F /* TestExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4659F2C2245E137600797A2F /* TestExtensions.swift */; };
 		46D007552468A76B00B5C38F /* WeekVarProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46D007542468A76B00B5C38F /* WeekVarProxy.swift */; };
 		46D0075A2468B28A00B5C38F /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46D007592468B28A00B5C38F /* Environment.swift */; };
+		46D0075C2468C29800B5C38F /* TestFactories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CD5B8F246108B300DBFC15 /* TestFactories.swift */; };
 		46DC7106245F2331005C2442 /* AlamofireAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46DC7105245F2331005C2442 /* AlamofireAdapter.swift */; };
 		46DD980B245F66BB00B44A38 /* SignUpPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46DD980A245F66BB00B44A38 /* SignUpPresenter.swift */; };
 		46DD980C245F66F900B44A38 /* Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46938E71245D10F400F6F599 /* Domain.framework */; };
@@ -1630,6 +1631,7 @@
 			files = (
 				46D007512468A39800B5C38F /* AddAccountSpy.swift in Sources */,
 				46D007522468A42900B5C38F /* TestExtensions.swift in Sources */,
+				46D0075C2468C29800B5C38F /* TestFactories.swift in Sources */,
 				46D007502468A30B00B5C38F /* SignUpComposerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
