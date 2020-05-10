@@ -80,6 +80,7 @@
 		46D007552468A76B00B5C38F /* WeekVarProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46D007542468A76B00B5C38F /* WeekVarProxy.swift */; };
 		46D0075A2468B28A00B5C38F /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46D007592468B28A00B5C38F /* Environment.swift */; };
 		46D0075C2468C29800B5C38F /* TestFactories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CD5B8F246108B300DBFC15 /* TestFactories.swift */; };
+		46D0075F2468C9E500B5C38F /* MainQueueDispatchDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46D0075E2468C9E500B5C38F /* MainQueueDispatchDecorator.swift */; };
 		46DC7106245F2331005C2442 /* AlamofireAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46DC7105245F2331005C2442 /* AlamofireAdapter.swift */; };
 		46DD980B245F66BB00B44A38 /* SignUpPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46DD980A245F66BB00B44A38 /* SignUpPresenter.swift */; };
 		46DD980C245F66F900B44A38 /* Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46938E71245D10F400F6F599 /* Domain.framework */; };
@@ -379,6 +380,7 @@
 		46D007572468B19900B5C38F /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
 		46D007582468B20F00B5C38F /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
 		46D007592468B28A00B5C38F /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
+		46D0075E2468C9E500B5C38F /* MainQueueDispatchDecorator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainQueueDispatchDecorator.swift; sourceTree = "<group>"; };
 		46DC7105245F2331005C2442 /* AlamofireAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireAdapter.swift; sourceTree = "<group>"; };
 		46DD980A245F66BB00B44A38 /* SignUpPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpPresenter.swift; sourceTree = "<group>"; };
 		46DD9812245F67B900B44A38 /* AlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertView.swift; sourceTree = "<group>"; };
@@ -849,6 +851,7 @@
 		46D0070D2468984700B5C38F /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				46D0075D2468C9C900B5C38F /* Decorators */,
 				46D007562468B17800B5C38F /* Env */,
 				46D007532468A74C00B5C38F /* Proxies */,
 				46D0074C2468A15B00B5C38F /* Composers */,
@@ -911,6 +914,14 @@
 				46D0074F2468A30B00B5C38F /* SignUpComposerTests.swift */,
 			);
 			path = Composers;
+			sourceTree = "<group>";
+		};
+		46D0075D2468C9C900B5C38F /* Decorators */ = {
+			isa = PBXGroup;
+			children = (
+				46D0075E2468C9E500B5C38F /* MainQueueDispatchDecorator.swift */,
+			);
+			path = Decorators;
 			sourceTree = "<group>";
 		};
 		46DC7107245F2431005C2442 /* Http */ = {
@@ -1617,6 +1628,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				46D0074B2468A06F00B5C38F /* UseCaseFactory.swift in Sources */,
+				46D0075F2468C9E500B5C38F /* MainQueueDispatchDecorator.swift in Sources */,
 				46D0075A2468B28A00B5C38F /* Environment.swift in Sources */,
 				46D0070F2468984700B5C38F /* AppDelegate.swift in Sources */,
 				46D007552468A76B00B5C38F /* WeekVarProxy.swift in Sources */,
