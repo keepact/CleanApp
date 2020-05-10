@@ -75,6 +75,9 @@
 		46D0074924689A9200B5C38F /* ControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46D0074824689A9200B5C38F /* ControllerFactory.swift */; };
 		46D0074B2468A06F00B5C38F /* UseCaseFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46D0074A2468A06F00B5C38F /* UseCaseFactory.swift */; };
 		46D0074E2468A16D00B5C38F /* SignUpComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46D0074D2468A16D00B5C38F /* SignUpComposer.swift */; };
+		46D007502468A30B00B5C38F /* SignUpIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46D0074F2468A30B00B5C38F /* SignUpIntegrationTests.swift */; };
+		46D007512468A39800B5C38F /* AddAccountSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CD5B892461073E00DBFC15 /* AddAccountSpy.swift */; };
+		46D007522468A42900B5C38F /* TestExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4659F2C2245E137600797A2F /* TestExtensions.swift */; };
 		46DC7106245F2331005C2442 /* AlamofireAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46DC7105245F2331005C2442 /* AlamofireAdapter.swift */; };
 		46DD980B245F66BB00B44A38 /* SignUpPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46DD980A245F66BB00B44A38 /* SignUpPresenter.swift */; };
 		46DD980C245F66F900B44A38 /* Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46938E71245D10F400F6F599 /* Domain.framework */; };
@@ -370,6 +373,7 @@
 		46D0074824689A9200B5C38F /* ControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllerFactory.swift; sourceTree = "<group>"; };
 		46D0074A2468A06F00B5C38F /* UseCaseFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseCaseFactory.swift; sourceTree = "<group>"; };
 		46D0074D2468A16D00B5C38F /* SignUpComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpComposer.swift; sourceTree = "<group>"; };
+		46D0074F2468A30B00B5C38F /* SignUpIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpIntegrationTests.swift; sourceTree = "<group>"; };
 		46DC7105245F2331005C2442 /* AlamofireAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireAdapter.swift; sourceTree = "<group>"; };
 		46DD980A245F66BB00B44A38 /* SignUpPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpPresenter.swift; sourceTree = "<group>"; };
 		46DD9812245F67B900B44A38 /* AlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertView.swift; sourceTree = "<group>"; };
@@ -855,6 +859,7 @@
 			isa = PBXGroup;
 			children = (
 				46D007272468984D00B5C38F /* Info.plist */,
+				46D0074F2468A30B00B5C38F /* SignUpIntegrationTests.swift */,
 			);
 			path = MainTests;
 			sourceTree = "<group>";
@@ -1307,6 +1312,7 @@
 					};
 					46D007202468984D00B5C38F = {
 						CreatedOnToolsVersion = 11.4.1;
+						LastSwiftMigration = 1140;
 						TestTargetID = 46D0070B2468984700B5C38F;
 					};
 				};
@@ -1590,6 +1596,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46D007512468A39800B5C38F /* AddAccountSpy.swift in Sources */,
+				46D007522468A42900B5C38F /* TestExtensions.swift in Sources */,
+				46D007502468A30B00B5C38F /* SignUpIntegrationTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2478,6 +2487,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QU32S9PHWL;
 				INFOPLIST_FILE = MainTests/Info.plist;
@@ -2489,6 +2499,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.clean.app.MainTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Main.app/Main";
@@ -2500,6 +2511,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QU32S9PHWL;
 				INFOPLIST_FILE = MainTests/Info.plist;
